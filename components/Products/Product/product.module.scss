@@ -1,0 +1,120 @@
+.heading {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #838383;
+}
+
+.list {
+    display: flex;
+}
+
+.item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 23px 80px 23px;
+    width: 350px;
+    min-height: 415px;
+    border-radius: 30px;
+    background: #ffffff;
+    transform: scale(1);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &:hover, &:active {
+        transform: scale(1.02);
+    } 
+}
+
+.img {
+    margin-bottom: 20px;
+    width: max-content;
+    height: max-content
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+
+    &_center {
+        justify-content: center;
+    }
+}
+
+.title {
+    font-weight: 500;
+    font-size: 17px;
+    color: #1C1C27;
+}
+
+.price {
+    font-weight: 500;
+    font-size: 17px;
+    color: #FFA542;
+}
+
+// @keyframes likes {
+//     0% {
+//         transform: scale(1);
+//     }
+
+//     50% {
+//         transform: scale(1.2);
+//     }
+
+//     100% {
+//         transform: scale(1);
+//     }
+// }
+
+.button {
+    position: absolute;
+    top: 15px;
+    left: 22px;
+    z-index: 1000;
+
+    &_active {
+        & .fill {
+            fill: #000000;
+        }
+    }
+
+    &:hover .fill{
+        fill: #000000;
+    }
+}
+
+.stroke {
+    fill: black;
+    transition: fill 0.3s ease;
+}
+
+.fill {
+    fill: transparent;
+    transition: fill 0.3s ease;
+}
+
+.logo {
+    position: absolute;
+    top: 23px;
+    right: 21px;
+    width: 25px;
+    height: 31px;
+}
+
+.button_modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}

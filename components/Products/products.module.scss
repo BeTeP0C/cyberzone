@@ -1,0 +1,14 @@
+.section {
+    padding-bottom: 60px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    &:not(:last-child) {
+        margin-bottom: 62px;
+    }
+}

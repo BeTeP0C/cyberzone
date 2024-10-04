@@ -1,0 +1,67 @@
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    position: relative;
+    padding: 54px 104px 134px;
+    border-radius: 20px;
+    background: #ffffff;
+}
+
+.heading {
+    margin-bottom: 90px;
+    padding-left: 51px;
+    font-weight: 500;
+    font-size: 36px;
+    color: #241F5C;
+    background: url("./open.svg") left bottom no-repeat transparent;
+    background-size: 39px 41px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    position: relative;
+
+    &:not(:last-child) {
+        margin-bottom: 53px;
+    }
+}
+
+.error {
+    position: absolute;
+    left: 20px;
+    bottom: -25px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #FE0808;
+}
+
+.input {
+    padding: 10px 20px;
+    border: 1px solid #676565;
+    border-radius: 20px;
+    font-size: 24px;
+    width: 467px;
+    height: 73px;
+}
+
+
+.button {
+    position: absolute;
+    right: 48px;
+    bottom: 36px;
+    border-radius: 20px;
+    width: 139px;
+    height: 45px;
+    font-weight: 500;
+    font-size: 24px;
+    color: #ffffff;
+    background: #241F5C;
+}
